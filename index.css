@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?w=1060&t=st=1685694220~exp=1685694820~hmac=28292920fd0d2c43d5afec1d3bce486a1c0f5980ac56801ed95d1985f51d64b3")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.weather {
+  background-image: linear-gradient(
+    to top,
+    rgba(82, 8, 230, 0.7),
+    rgb(197, 5, 114)
+  );
+  box-shadow: 10px 15px 100px rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 5px;
+  width: 450px;
+  text-align: center;
+  padding: 40px;
+}
+.weather h1 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+  font-weight: 900;
+}
+
+.searchbar input {
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.searchbar button {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  padding: 10px 15px;
+  color: black;
+  font-size: 16px;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#error {
+  margin-bottom: 10px;
+  font-weight: 900;
+  color: yellow;
+}
+
+.searchbar button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.weather_data h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.weather_data img {
+  margin-top: 20px;
+}
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.data div span {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 492px) {
+  body {
+    padding: 20px;
+  }
+  .weather {
+    width: 350px;
+    padding: 40px 15px;
+  }
+  .searchbar input {
+    width: 60%;
+  }
+  .weather h1 {
+    font-size: 24px;
+  }
+}
